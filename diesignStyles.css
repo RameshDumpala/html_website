@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+ 
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+  --h1: 40px;
+  --h2: 32px;
+  --h3: 28px;
+  --h4: 24px;
+  --h5: 20px;
+  --h6: 16px;
+
+  --sub: 20px;
+  --lable: 16px;
+  --ls: 5px;
+  --body: 14px;
+  --font-1: 'Crimson Text', serif;
+  --font-2: 'Work Sans', sans-serif;
+
+  --color-dark-100: #212529;
+  --color-dark-75: rgba(41, 33, 33, 0.75);
+  --color-dark-50: rgba(41, 33, 33, 0.5);
+  --color-dark-25: rgba(41, 33, 33, 0.25);
+
+  --color-white-100: rgba(255, 255, 255, 1);
+  --color-white-75: rgba(255, 255, 255, 0.75);
+  --color-white-50: rgba(255, 255, 255, 0.5);
+  --color-white-25: rgba(255, 255, 255, 0.25);
+
+  --color-green-100: rgba(166, 198, 157, 1);
+  --color-green-75: rgba(166, 198, 157, 0.75);
+  --color-green-50: rgba(166, 198, 157, 0.5);
+  --color-green-25: rgba(166, 198, 157, 0.25);
+
+
+  --shadow-1:3px 4px 12px 1px rgba(0,0,0,0.25)
+}
+
+
+/* button styles */
+
+.white-btn {
+  cursor: pointer;
+ background-color: var(--color-white-100);
+ color: var(--color-dark-100);
+ font-family: var(--font-2);
+ font-size: var(--h5);
+ padding: 10px 40px;
+ border: none;
+ border-radius: 8px;
+
+}
+.dark-btn {
+  cursor: pointer;
+  background-color: var(--color-dark-100);
+  color: var(--color-white-100);
+  font-family: var(--font-2);
+  font-size: var(--h5);
+  padding: 10px 40px;
+  border: none;
+  border-radius: 8px;
+}
+
+
+
+
+
+
+.navbar_content{
+    background-color: var(--color-green-100);
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0px;
+  
+}
+.navbar__logo{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.navbar__logo--text{
+    font-size: var(--h2);
+    color: var(--color-white-100);
+    font-family: var(--font-2);
+    font-weight: 500px;
+}
+.navbar__menu{
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    font-size: var(--h5);
+    font-family: var(--font-1);
+    
+}
+.navbar__menu--1{
+    text-decoration: none;
+    color: var(--color-white-100);
+}
+
+.navar__icons{
+    display: none;
+}
+.navar__icons i{
+    cursor: pointer;
+    font-size: var(--h2);
+    color: var(--color-white-100);
+
+}
+
+
+/* text colors */
+
+.text_white{
+    color: var(--color-white-100);
+}
+.text_dark{
+    color: var(--color-dark-100);
+}
+.text_green{
+    color: var(--color-green-100);
+}
+
+
+
+.lable{
+    letter-spacing:var(--ls);
+    font-size: var(--lable);
+    font-family: var(--font-2);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+  
+
+/* style for common classes */
+.text-center{
+    text-align: center;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto    ;
+    align-items: center;
+}
+.sectionTwo{
+    display: grid;
+    gap:30px;
+    padding: 40px 0;
+}
+.left__img{
+    max-width: 100%;
+    height: auto;
+}
+.sectionOne{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 40px 0;
+    gap: 25px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.common-title{
+    text-transform: capitalize;
+    font-family: var(--font-1);
+    font-size: var(--h1);
+    font-weight: bold;
+}
+.card-columns{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+
+
+.footerwrapper{
+    background-color: var(--color-green-100);
+  
+}
+
+.footerlinks{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+}
+.footerlinks__socials{
+    letter-spacing: 15px;
+    align-items: center;
+}
+.foolerlink__righttext{
+    color: var(--color-white-100);
+    font-size: var(--sub);
+    font-family: var(--font-2);
+}
+
+@media (max-width:1200px) {
+    .container{
+        max-width: 970px;
+    }
+    
+}
+@media (max-width:1024px) {
+    .container{
+        max-width: 740px;
+    }
+    
+}
+@media (max-width:768px) {
+    .container{
+        max-width: 500px;
+    }
+    .sectionOne{
+
+        grid-template-columns: repeat(1,1fr);
+         
+    }
+    .navbar__menu{
+        position: absolute;
+        top:25vh;
+        background-color: var(--color-green-100);
+        width: 100%;
+        right: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .navar__icons{
+        display: block;
+    }
+    .hide{
+        display: none;
+    }
+    .hidden{
+        opacity: 0%;
+    }
+    .footerlinks{
+        display: flex;
+        flex-direction:column;
+        gap: 20px;
+    }
+}
+@media (max-width:568px) {
+    .container{
+        max-width: 90%;
+    }
+    
+}
+
+
